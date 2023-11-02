@@ -1,0 +1,79 @@
+@font-face {
+    font-family: robot-regular;
+    src: url(../polices/Roboto_Mono/static/RobotoMono-Regular.ttf);
+  }
+  @font-face {
+    font-family: robot-title;
+    src: url(../polices/Roboto_Mono/static/RobotoMono-Bold.ttf);
+  }
+/* body initialisation  */
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* Style du header */
+
+header{
+    background-color: black;
+    color: beige;
+}
+
+
+header .headerInit{
+    max-height:15dvh ;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-start;
+    
+} 
+
+header .headerInit .logo{
+    width: 10%;
+    align-self: center;
+    
+}
+
+header .headerInit ul {
+    list-style: none;
+   margin: 0;
+}
+
+header .headerInit ul>li {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 17px;
+}
+
+/* Link Style */
+
+header .headerInit li>a{
+    text-decoration: none;
+    color: beige;
+   font-family: robot-regular;
+}
+
+header .headerInit li>a:hover{
+    color: rgb(139, 251, 35);
+    cursor: pointer;
+    background-color: rgb(129, 129, 129);
+}
+
+header .headerInit h1:hover{
+    cursor: pointer;
+    background-color: rgb(129, 129, 129);
+}
+/* Footer Style */
+
+footer{
+    background-color: black;
+    color: beige;
+    font-family: robot-regular;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}

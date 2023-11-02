@@ -1,0 +1,18 @@
+/* Style de l'acceuil */
+header .headerBig{
+    height: 30dvh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-family: robot-title;
+}
+
+header .headerBig img{
+max-width: 25%;
+margin: 0;
+}
+
+header .headerInit{
+    display: none;
+}
