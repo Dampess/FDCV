@@ -1,3 +1,9 @@
+// Bloquer le clicl droit sur toute la page 
+
+document.addEventListener('contextmenu', function (e) {
+  e.preventDefault();
+});
+
 // Apparition du header au chargement de la page
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -83,43 +89,6 @@ window.addEventListener('scroll', () => {
   lastScrollValue = scrollValue;
 });
 
-// Section Compétences nuage
 
-const competences = document.querySelectorAll('.compet');
-const positions = [];
-
-const section = document.getElementById('competences');
-const sectionWidth = section.offsetWidth;
-const sectionHeight = section.offsetHeight;
-const elementWidth = 200; // Largeur maximale de vos éléments
-const elementHeight = 50; // Hauteur maximale de vos éléments
-
-competences.forEach((competence) => {
-  let randomX, randomY;
-  let isCollision = true;
-
-  while (isCollision) {
-    randomX = Math.random() * (sectionWidth - elementWidth);
-    randomY = Math.random() * (sectionHeight - elementHeight);
-
-    isCollision = false; // Supprimez la condition d'arrêt de la boucle
-
-    for (const position of positions) {
-      if (
-        randomX + elementWidth > position.x &&
-        randomX < position.x + elementWidth &&
-        randomY + elementHeight > position.y &&
-        randomY < position.y + elementHeight
-      ) {
-        isCollision = true;
-        break;
-      }
-    }
-  }
-
-  competence.style.left = `${randomX}px`;
-  competence.style.top = `${randomY}px`;
-  positions.push({ x: randomX, y: randomY });
-});
 
   

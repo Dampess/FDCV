@@ -1,5 +1,5 @@
 main{
-    background-color: rgb(190, 190, 190);
+    background-color: rgb(171, 171, 171);
 }
 /* Style de l'acceuil + apparition du header au défilement */
 
@@ -60,7 +60,7 @@ header .headerInit {
 
 #presentation{
     min-height: 100dvh;
-    background-color: rgb(190, 190, 190);
+    
 }
 
 .h2Presentation{
@@ -82,13 +82,15 @@ header .headerInit {
     font-family: robot-regular;
     font-size: 20px;
     text-align: justify;
-    background-color:rgb(116, 116, 116) ;
+    background-color:rgb(50, 50, 50) ;
     border: 2px;
     border-style: dashed;
+    border-color: rgb(139, 251, 35);
     opacity: 0; 
     transform: translateX(-20px); 
     transition: opacity 1s ease, transform 1s ease; 
     color: beige;
+    margin-bottom: 2%;
 }
 
 #presentation .me img{
@@ -108,9 +110,10 @@ header .headerInit {
     font-family: robot-regular;
     font-size: 20px;
     text-align: justify;
-    background-color:rgb(116, 116, 116) ;
+    background-color:rgb(50, 50, 50) ;
     border: 2px;
     border-style: dashed;
+    border-color: rgb(139, 251, 35);
     opacity: 0; 
     transform: translateX(-20px); 
     transition: opacity 1s ease, transform 1s ease; 
@@ -139,14 +142,15 @@ header .headerInit {
 #formationCarreer .timeline{
     display: flex;
    margin: auto;
-   
-   width: 100%;
+   border: 2.5px;
+   border-style: double;
+   width: 80%;
    justify-content: space-between;
    font-family: robot-regular;
    font-size: 20px;
    color: rgb(139, 251, 35);
   
-  background-color: black;
+   background-color:rgb(50, 50, 50) ;
 }
 
 #formationCarreer .timeline ul{
@@ -202,15 +206,27 @@ header .headerInit {
     font-family: robot-title;
     font-size: 35px;
 }
-
+.divcompet{
+    border: 2.5px;
+    border-style: outset;
+    margin: auto;
+    width: 80%;
+    border-color: rgb(139, 251, 35);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color:rgb(50, 50, 50) 
+}
 .compet {
+    
+   
     background-color: black;
-    position: absolute;
     font-family: robot-regular;
     font-size: 20px;
     color: beige; 
     border-radius: 5px; 
-    margin: 15px;
+    margin: 25px;
     padding: 10px;
     cursor:default;
     transition: transform 0.3s ease;
@@ -220,14 +236,11 @@ header .headerInit {
   }
   
   .compet:hover {
-    transform: scale(1.1) rotateX(60deg);
+    transform: scale(1.1) rotateX(75deg);
   }
 
   /* Docs et contacts */
 
-  #docAndContacts{
-    min-height: 100dvh;
-  }
 
   #docAndContacts .h2DocAndContacts{
     text-align: center;
@@ -243,14 +256,22 @@ header .headerInit {
     font-family: robot-regular;
     font-size: 20px;
     text-align: center;
-    margin-top: 5%;
-   
+    
+    border: 2.5px;
+    border-style: inset;
+    border-color: rgb(139, 251, 35);
+    width: 80%;
+    margin: auto;
+    min-height: 100dvh;
+    align-items: center;
+   background-color: rgb(50, 50, 50);
   }
 #docAndContacts .divdocs .documents .btn-download{
     background-color: rgb(253, 253, 253);
     color:rgb(0, 0, 0) ;
     padding: 10px;
     border-radius: 15px;
+    font-size: 15px;
 }
 
 #docAndContacts .divdocs .documents .btn-download:hover{
@@ -266,8 +287,11 @@ color:rgb(139, 251, 35) ;
 }
 
 #docAndContacts .divdocs .documents img{
-    width: 30%;
+    width: 45%;
     margin-bottom: 2%;
+    border: 2px;
+    border-style: groove;
+    border-color: rgb(251, 251, 251);
 }
 
 #docAndContacts .contacts ul{
@@ -277,4 +301,5 @@ color:rgb(139, 251, 35) ;
 #docAndContacts .contacts ul li{
     margin-bottom: 5%;
     text-align: left;
+    color: beige;
 }
