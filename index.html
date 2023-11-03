@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="style/normalize.css">
     <link rel="stylesheet" href="style/main.css">
     <link rel="stylesheet" href="style/accueil.css">
+    <script src="js/rellax.min.js" defer></script>
     <script src="https://kit.fontawesome.com/d5ef5bf7aa.js"  crossorigin="anonymous" defer></script>
+    <script src="js/app.js" defer></script>
 </head>
 <body>
     <header>
@@ -36,6 +38,11 @@
         </div>
     </header>
     <main>
+        <section id="accueille">
+            <div class="parallaxe-container">
+              <h2 class="parallaxe-texte">Bienvenue sur mon site</h2>
+            </div>
+          </section>
         <section id="presentation">
             <h2 class="h2Presentation">Présentation</h2>
             <article class="me">
@@ -47,8 +54,9 @@
                 <img src="img/bureau.jpg" alt="">
             </article>
         </section>
-        <section id="fromationCarreer">
+        <section id="formationCarreer" >
             <h2 class="h2formation">Formation et Carrière</h2>
+            <div class="timeline">
             <article class="formation">
                 <ul>
                     <li>Formation AFPA DWWM : 2023-2024</li>
@@ -60,35 +68,36 @@
             </article>
             <article class="carreer">
                 <ul>
-                    <li>2023: Concepteur Dévelippeur Freelance</li>
+                    <li>2023: Concepteur Développeur Freelance</li>
                     <li>2019-2022: Management et vente (multiples structure)</li>
                 </ul>
             </article>
+        </div>
         </section>
         <section id="competences">
             <h2 class="h2competences">Compétences</h2>
-            <h4 class="compet1">JavaScript</h4>
-            <h4 class="compet2">SQL</h4>
-            <h4 class="compet3">MySQL</h4>
-            <h4 class="compet4">PHP</h4>
-            <h4 class="compet5">Trello</h4>
-            <h4 class="compet6">ActiveDirectory</h4>
-            <h4 class="compet7">Vue.JS</h4>
-            <h4 class="compet8">Design Graphique</h4>
-            <h4 class="compet9">Octoparse</h4>
-            <h4 class="compet10">Mathématique</h4>
-            <h4 class="compet11">CSS</h4>
-            <h4 class="compet12">HTML</h4>
-            <h4 class="compet13">Search Consol</h4>
-            <h4 class="compet14">Maquettage</h4>
-            <h4 class="compet15">Python</h4>
-            <h4 class="compet16">Suite Adobe</h4>
-            <h4 class="compet17">Suite Microsoft</h4>
-            <h4 class="compet18">Analyse</h4>
-            <h4 class="compet19">Montage Vidéo/Photo</h4>
-            <h4 class="compet20">Figma</h4>
-            <h4 class="compet21">Communication</h4>
-            <h4 class="compet22">Virtualisation</h4>
+            <h4 class="compet compet1">JavaScript</h4>
+            <h4 class="compet compet2">SQL</h4>
+            <h4 class="compet compet3">MySQL</h4>
+            <h4 class="compet compet4">PHP</h4>
+            <h4 class="compet compet5">Trello</h4>
+            <h4 class="compet compet6">ActiveDirectory</h4>
+            <h4 class="compet compet7">Vue.JS</h4>
+            <h4 class="compet compet8">Design Graphique</h4>
+            <h4 class="compet compet9">Octoparse</h4>
+            <h4 class="compet compet10">Mathématique</h4>
+            <h4 class="compet compet11">CSS</h4>
+            <h4 class="compet compet12">HTML</h4>
+            <h4 class="compet compet13">Search Consol</h4>
+            <h4 class="compet compet14">Maquettage</h4>
+            <h4 class="compet compet15">Python</h4>
+            <h4 class="compet compet16">Suite Adobe</h4>
+            <h4 class="compet compet17">Suite Microsoft</h4>
+            <h4 class="compet compet18">Analyse</h4>
+            <h4 class="compet compet19">Montage Vidéo/Photo</h4>
+            <h4 class="compet compet20">Figma</h4>
+            <h4 class="compet compet21">Communication</h4>
+            <h4 class="compet compet22">Virtualisation</h4>
         </section>
         <section id="docAndContacts">
             <h2 class="h2DocAndContacts">Documents et Contacts</h2>

@@ -1,18 +1,218 @@
-/* Style de l'acceuil */
-header .headerBig{
-    height: 30dvh;
+main{
+    background-color: rgb(190, 190, 190);
+}
+/* Style de l'acceuil + apparition du header au défilement */
+
+header .headerBig {
+  height: 25dvh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-family: robot-title;
+  margin: 0;
+  opacity: 0; 
+  transform: scale(0); 
+  transition: opacity 1.5s ease, transform 1s ease;
+}
+
+header .headerBig img {
+  max-width: 20%;
+  margin: 0;
+}
+
+header .headerInit {
+    opacity: 0;
+    transition: opacity 0.5s ease; 
+    position: fixed;
+    top: 0;
+    background-color: black;
+    z-index: 2;
+}
+
+/* Style partie 1 Bgi et Bienvenue en parallax */
+
+#accueille {
+    margin: 0;
+    min-height: 80dvh;
+    background-color: rgba(0, 0, 0, 0.617);
+    background-image: url(../img/pexels-negative-space-169573.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  
+.parallaxe-texte {
+  
+  font-family: robot-title;
+  font-size: 35px;
+  color: beige;
+  
+}
+
+/* Section présentation */
+
+#presentation{
+    min-height: 100dvh;
+    background-color: rgb(190, 190, 190);
+}
+
+.h2Presentation{
+    text-align: center;
+    font-family: robot-title;
+    font-size: 35px;
+    margin-bottom: 5%;
+}
+
+#presentation .me{
+    min-height: 50dvh;
+    width: 80%;
+    margin: auto;
+    padding: 2%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
+    font-family: robot-regular;
+    font-size: 20px;
+    text-align: justify;
+    background-color:rgb(116, 116, 116) ;
+    border: 2px;
+    border-style: dashed;
+    opacity: 0; 
+    transform: translateX(-20px); 
+    transition: opacity 1s ease, transform 1s ease; 
+}
+
+#presentation .me img{
+    width: 27%;
+    margin-right: 2%;
+}
+
+#presentation .entreprise{
+    min-height: 50%;
+    margin: auto;
+    padding: 2%;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    font-family: robot-regular;
+    font-size: 20px;
+    text-align: justify;
+    background-color:rgb(116, 116, 116) ;
+    border: 2px;
+    border-style: dashed;
+    opacity: 0; 
+    transform: translateX(-20px); 
+    transition: opacity 1s ease, transform 1s ease; 
+}
+
+#presentation .entreprise img{
+    width: 20%;
+    margin-left: 2%;
+    
+}
+
+/* Section Formation et carriére  */
+
+#formationCarreer{
+    min-height: 100dvh;
+    margin: 0;
+}
+
+#formationCarreer .h2formation{
+    text-align: center;
     font-family: robot-title;
+    font-size: 35px;
 }
 
-header .headerBig img{
-max-width: 25%;
-margin: 0;
+#formationCarreer .timeline{
+    display: flex;
+   margin: auto;
+   
+   width: 100%;
+   justify-content: space-between;
+   font-family: robot-regular;
+   font-size: 20px;
+   color: rgb(139, 251, 35);
+  
+  background-color: black;
 }
 
-header .headerInit{
-    display: none;
+#formationCarreer .timeline ul{
+    list-style: none;
+    height: 100%;
+    
 }
+
+#formationCarreer .formation{
+    border: 0;
+    border-right: 10px;
+    border-style: ridge;
+    border-color: rgb(139, 251, 35);
+    transform: scale(1); 
+    transition: transform 1s ease;
+    
+}
+#formationCarreer .carreer{
+    margin-top: 2%;
+    transform: scale(1); 
+    transition: transform 1s ease;
+    
+}
+#formationCarreer .formation ul li{
+    margin-bottom: 9%;
+    border: 0;
+    border-top: 5px;
+    border-style:dashed;
+}
+
+#formationCarreer .carreer ul li{
+    margin-bottom: 25%;
+    margin-right: 10%;
+   
+    border: 0;
+    border-top: 5px;
+    border-style:dashed;
+}
+
+/* Section compétences */
+
+#competences{
+    position: relative;
+    background-color: black;
+    color: beige;
+    margin: 0;
+    min-height: 100dvh;
+}
+#competences .h2competences{
+    margin: 0;
+    text-align: center;
+    font-family: robot-title;
+    font-size: 35px;
+}
+.compet {
+    position: absolute;
+    font-family: robot-regular;
+    font-size: 20px;
+    color: rgb(139, 251, 35); 
+    border-radius: 5px; 
+    margin: 15px;
+    padding: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    transform-style: preserve-3d; /* Activer la 3D */
+  perspective: 1000px;
+  }
+  
+  .compet:hover {
+    transform: scale(1.1);
+  }
