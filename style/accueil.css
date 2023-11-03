@@ -306,10 +306,10 @@ header .headerInit {
   #docAndContacts .h2DocAndContacts,
   #formationCarreer .h2formation,
   .h2Presentation {
-    font-size: 15px;
+    font-size: 20px;
   }
   p {
-    font-size: 10px;
+    font-size: 15px;
   }
   #presentation,
   #formationCarreer,
@@ -318,12 +318,12 @@ header .headerInit {
     min-height: auto;
   }
   #formationCarreer ul li {
-    font-size: 6px;
+    font-size: 10px;
     border: 1.5px;
   }
 
   #competences h4 {
-    font-size: 6px;
+    font-size: 10px;
     padding: 5px;
     display: contents;
   }
@@ -333,6 +333,6 @@ header .headerInit {
   }
 
   #docAndContacts .divdocs .contacts {
-    font-size: 6px;
+    font-size: 10px;
   }
 }
