@@ -1,5 +1,5 @@
-main{
-    background-color: rgb(171, 171, 171);
+main {
+  background-color: rgb(171, 171, 171);
 }
 /* Style de l'acceuil + apparition du header au défilement */
 
@@ -11,8 +11,8 @@ header .headerBig {
   align-items: center;
   font-family: robot-title;
   margin: 0;
-  opacity: 0; 
-  transform: scale(0); 
+  opacity: 0;
+  transform: scale(0);
   transition: opacity 1.5s ease, transform 1s ease;
 }
 
@@ -22,284 +22,317 @@ header .headerBig img {
 }
 
 header .headerInit {
-    opacity: 0;
-    transition: opacity 0.5s ease; 
-    position: fixed;
-    top: 0;
-    background-color: black;
-    z-index: 2;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  position: fixed;
+  top: 0;
+  background-color: black;
+  z-index: 2;
 }
 
 /* Style partie 1 Bgi et Bienvenue en parallax */
 
 #accueille {
-    margin: 0;
-    min-height: 80dvh;
-    background-color: rgba(0, 0, 0, 0.617);
-    background-image: url(../img/pexels-negative-space-169573.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-blend-mode: multiply;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  margin: 0;
+  min-height: 80dvh;
+  background-color: rgba(0, 0, 0, 0.617);
+  background-image: url(../img/pexels-negative-space-169573.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  
 .parallaxe-texte {
-  
   font-family: robot-title;
   font-size: 35px;
   color: beige;
-  
 }
 
 /* Section présentation */
 
-#presentation{
-    min-height: 100dvh;
-    
+#presentation {
+  min-height: 100dvh;
 }
 
-.h2Presentation{
-    text-align: center;
-    font-family: robot-title;
-    font-size: 35px;
-    margin-bottom: 5%;
+.h2Presentation {
+  text-align: center;
+  font-family: robot-title;
+  font-size: 35px;
+  margin-bottom: 5%;
 }
 
-#presentation .me{
-    min-height: 50dvh;
-    width: 80%;
-    margin: auto;
-    padding: 2%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-start;
-    font-family: robot-regular;
-    font-size: 20px;
-    text-align: justify;
-    background-color:rgb(50, 50, 50) ;
-    border: 2px;
-    border-style: dashed;
-    border-color: rgb(139, 251, 35);
-    opacity: 0; 
-    transform: translateX(-20px); 
-    transition: opacity 1s ease, transform 1s ease; 
-    color: beige;
-    margin-bottom: 2%;
+#presentation .me {
+  width: 80%;
+  margin: auto;
+  padding: 2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  font-family: robot-regular;
+  font-size: 20px;
+  text-align: justify;
+  background-color: rgb(50, 50, 50);
+  border: 2px;
+  border-style: dashed;
+  border-color: rgb(139, 251, 35);
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: opacity 1s ease, transform 1s ease;
+  color: beige;
+  margin-bottom: 2%;
 }
 
-#presentation .me img{
-    width: 27%;
-    margin-right: 2%;
+#presentation .me img {
+  width: 27%;
+  margin-right: 2%;
 }
 
-#presentation .entreprise{
-    min-height: 50%;
-    margin: auto;
-    padding: 2%;
-    width: 80%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-start;
-    font-family: robot-regular;
-    font-size: 20px;
-    text-align: justify;
-    background-color:rgb(50, 50, 50) ;
-    border: 2px;
-    border-style: dashed;
-    border-color: rgb(139, 251, 35);
-    opacity: 0; 
-    transform: translateX(-20px); 
-    transition: opacity 1s ease, transform 1s ease; 
-    color: beige;
+#presentation .entreprise {
+  min-height: 50%;
+  margin: auto;
+  padding: 2%;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  font-family: robot-regular;
+  font-size: 20px;
+  text-align: justify;
+  background-color: rgb(50, 50, 50);
+  border: 2px;
+  border-style: dashed;
+  border-color: rgb(139, 251, 35);
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: opacity 1s ease, transform 1s ease;
+  color: beige;
 }
 
-#presentation .entreprise img{
-    width: 20%;
-    margin-left: 2%;
-    
+#presentation .entreprise img {
+  width: 20%;
+  margin-left: 2%;
 }
 
 /* Section Formation et carriére  */
 
-#formationCarreer{
-    min-height: 100dvh;
-    margin: 0;
+#formationCarreer {
+  min-height: 100dvh;
+  margin: 0;
 }
 
-#formationCarreer .h2formation{
-    text-align: center;
-    font-family: robot-title;
-    font-size: 35px;
+#formationCarreer .h2formation {
+  text-align: center;
+  font-family: robot-title;
+  font-size: 35px;
 }
 
-#formationCarreer .timeline{
-    display: flex;
-   margin: auto;
-   border: 2.5px;
-   border-style: double;
-   width: 80%;
-   justify-content: space-between;
-   font-family: robot-regular;
-   font-size: 20px;
-   color: rgb(139, 251, 35);
-  
-   background-color:rgb(50, 50, 50) ;
+#formationCarreer .timeline {
+  display: flex;
+  margin: auto;
+  border: 2.5px;
+  border-style: double;
+  width: 80%;
+  justify-content: space-between;
+  font-family: robot-regular;
+  font-size: 20px;
+  color: rgb(139, 251, 35);
+
+  background-color: rgb(50, 50, 50);
 }
 
-#formationCarreer .timeline ul{
-    list-style: none;
-    height: 100%;
-    
+#formationCarreer .timeline ul {
+  list-style: none;
+  height: 100%;
 }
 
-#formationCarreer .formation{
-    border: 0;
-    border-right: 10px;
-    border-style: ridge;
-    border-color: rgb(139, 251, 35);
-    transform: scale(1); 
-    transition: transform 1s ease;
-    
+#formationCarreer .formation {
+  border: 0;
+  border-right: 10px;
+  border-style: ridge;
+  border-color: rgb(139, 251, 35);
+  transform: scale(1);
+  transition: transform 1s ease;
 }
-#formationCarreer .carreer{
-    margin-top: 2%;
-    transform: scale(1); 
-    transition: transform 1s ease;
-    
+#formationCarreer .carreer {
+  margin-top: 2%;
+  transform: scale(1);
+  transition: transform 1s ease;
 }
-#formationCarreer .formation ul li{
-    margin-bottom: 9%;
-    border: 0;
-    border-top: 5px;
-    border-style:dashed;
+#formationCarreer .formation ul li {
+  margin-bottom: 9%;
+  border: 0;
+  border-top: 5px;
+  border-style: dashed;
 }
 
-#formationCarreer .carreer ul li{
-    margin-bottom: 25%;
-    margin-right: 10%;
-   
-    border: 0;
-    border-top: 5px;
-    border-style:dashed;
+#formationCarreer .carreer ul li {
+  margin-bottom: 25%;
+  margin-right: 10%;
+
+  border: 0;
+  border-top: 5px;
+  border-style: dashed;
 }
 
 /* Section compétences */
 
-#competences{
-    position: relative;
-    color: rgb(0, 0, 0);
-    margin: 0;
-    min-height: 100dvh;
-    
+#competences {
+  position: relative;
+  color: rgb(0, 0, 0);
+  margin: 0;
+  min-height: 100dvh;
 }
 
-#competences .h2competences{
-    margin: 0;
-    text-align: center;
-    font-family: robot-title;
-    font-size: 35px;
+#competences .h2competences {
+  margin: 0;
+  text-align: center;
+  font-family: robot-title;
+  font-size: 35px;
 }
-.divcompet{
-    border: 2.5px;
-    border-style: outset;
-    margin: auto;
-    width: 80%;
-    border-color: rgb(139, 251, 35);
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    background-color:rgb(50, 50, 50) 
+.divcompet {
+  border: 2.5px;
+  border-style: outset;
+  margin: auto;
+  width: 80%;
+  border-color: rgb(139, 251, 35);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: rgb(50, 50, 50);
 }
 .compet {
-    
-   
-    background-color: black;
-    font-family: robot-regular;
-    font-size: 20px;
-    color: beige; 
-    border-radius: 5px; 
-    margin: 25px;
-    padding: 10px;
-    cursor:default;
-    transition: transform 0.3s ease;
+  background-color: black;
+  font-family: robot-regular;
+  font-size: 20px;
+  color: beige;
+  border-radius: 5px;
+  margin: 25px;
+  padding: 10px;
+  cursor: default;
+  transition: transform 0.3s ease;
   transform-style: preserve-3d;
   perspective: 1000px;
   transform: translateZ(0);
-  }
-  
-  .compet:hover {
-    transform: scale(1.1) rotateX(75deg);
-  }
+}
 
-  /* Docs et contacts */
+.compet:hover {
+  transform: scale(1.1) rotateX(75deg);
+}
 
+/* Docs et contacts */
 
-  #docAndContacts .h2DocAndContacts{
-    text-align: center;
-    font-family: robot-title;
-    font-size: 35px;
-    margin: 0;
-  }
+#docAndContacts .h2DocAndContacts {
+  text-align: center;
+  font-family: robot-title;
+  font-size: 35px;
+  margin: 0;
+}
 
-  .divdocs{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    font-family: robot-regular;
-    font-size: 20px;
-    text-align: center;
-    
-    border: 2.5px;
-    border-style: inset;
-    border-color: rgb(139, 251, 35);
-    width: 80%;
-    margin: auto;
-    min-height: 100dvh;
-    align-items: center;
-   background-color: rgb(50, 50, 50);
-  }
-#docAndContacts .divdocs .documents .btn-download{
-    background-color: rgb(253, 253, 253);
-    color:rgb(0, 0, 0) ;
-    padding: 10px;
-    border-radius: 15px;
+.divdocs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-family: robot-regular;
+  font-size: 20px;
+  text-align: center;
+
+  border: 2.5px;
+  border-style: inset;
+  border-color: rgb(139, 251, 35);
+  width: 80%;
+  margin: auto;
+  min-height: 100dvh;
+  align-items: center;
+  background-color: rgb(50, 50, 50);
+}
+#docAndContacts .divdocs .documents .btn-download {
+  background-color: rgb(253, 253, 253);
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  border-radius: 15px;
+  font-size: 15px;
+}
+
+#docAndContacts .divdocs .documents .btn-download:hover {
+  cursor: pointer;
+  background-color: black;
+  color: rgb(139, 251, 35);
+}
+
+#docAndContacts .divdocs .documents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#docAndContacts .divdocs .documents img {
+  width: 45%;
+  margin-bottom: 2%;
+  border: 2px;
+  border-style: groove;
+  border-color: rgb(251, 251, 251);
+}
+
+#docAndContacts .contacts ul {
+  list-style: none;
+}
+
+#docAndContacts .contacts ul li {
+  margin-bottom: 5%;
+  text-align: left;
+  color: beige;
+}
+
+/* Responsivité */
+
+@media screen and (max-width: 480px) {
+  h1,
+  h2,
+  h3 {
     font-size: 15px;
-}
+  }
+  .parallaxe-texte{
+    font-size: 25px;
+  }
+  #competences .h2competences,
+  #docAndContacts .h2DocAndContacts,
+  #formationCarreer .h2formation,
+  .h2Presentation {
+    font-size: 15px;
+  }
+  p {
+    font-size: 10px;
+  }
+  #presentation,
+  #formationCarreer,
+  #competences, 
+  #docAndContacts .divdocs {
+    min-height: auto;
+  }
+  #formationCarreer ul li {
+    font-size: 6px;
+    border: 1.5px;
+  }
 
-#docAndContacts .divdocs .documents .btn-download:hover{
-cursor: pointer;
-background-color: black;
-color:rgb(139, 251, 35) ;
-}
+  #competences h4 {
+    font-size: 6px;
+    padding: 5px;
+    display: contents;
+  }
 
-#docAndContacts .divdocs .documents{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+  #docAndContacts .divdocs .documents {
+    display: none;
+  }
 
-#docAndContacts .divdocs .documents img{
-    width: 45%;
-    margin-bottom: 2%;
-    border: 2px;
-    border-style: groove;
-    border-color: rgb(251, 251, 251);
-}
-
-#docAndContacts .contacts ul{
-    list-style: none;
-}
-
-#docAndContacts .contacts ul li{
-    margin-bottom: 5%;
-    text-align: left;
-    color: beige;
+  #docAndContacts .divdocs .contacts {
+    font-size: 6px;
+  }
 }

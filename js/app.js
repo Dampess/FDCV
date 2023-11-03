@@ -1,8 +1,3 @@
-// Bloquer le clicl droit sur toute la page 
-
-document.addEventListener('contextmenu', function (e) {
-  e.preventDefault();
-});
 
 // Apparition du header au chargement de la page
 

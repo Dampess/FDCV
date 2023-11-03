@@ -77,3 +77,16 @@ footer{
     justify-content: space-around;
     align-items: center;
 }
+
+/* Responsivité */
+
+@media screen and (max-width: 600px) {
+  header .headerInit ul>li {
+      margin-right: 5px; 
+      font-size: 10px; 
+  }
+
+  footer{
+    font-size: 10px;
+  }
+}
