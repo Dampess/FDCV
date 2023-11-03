@@ -86,29 +86,40 @@ window.addEventListener('scroll', () => {
 // Section Compétences nuage
 
 const competences = document.querySelectorAll('.compet');
-const positions=[]
+const positions = [];
 
-competences.forEach((competences) => {
-  const randomX = Math.random() * 70; 
-  const randomY = Math.random() * 90;
+const section = document.getElementById('competences');
+const sectionWidth = section.offsetWidth;
+const sectionHeight = section.offsetHeight;
+const elementWidth = 200; // Largeur maximale de vos éléments
+const elementHeight = 50; // Hauteur maximale de vos éléments
 
-  competences.style.left = `${randomX}%`;
-  competences.style.top = `${randomY}%`;
-  positions.push({ x: randomX, y: randomY });
-});
+competences.forEach((competence) => {
+  let randomX, randomY;
+  let isCollision = true;
 
+  while (isCollision) {
+    randomX = Math.random() * (sectionWidth - elementWidth);
+    randomY = Math.random() * (sectionHeight - elementHeight);
 
+    isCollision = false; // Supprimez la condition d'arrêt de la boucle
 
-function checkCollision(x, y) {
     for (const position of positions) {
-      const dx = x - position.x;
-      const dy = y - position.y;
-      const distance = Math.sqrt(dx * dx + dy * dy);
-      if (distance < 20) { 
-        return false;
+      if (
+        randomX + elementWidth > position.x &&
+        randomX < position.x + elementWidth &&
+        randomY + elementHeight > position.y &&
+        randomY < position.y + elementHeight
+      ) {
+        isCollision = true;
+        break;
       }
     }
-    return true;
   }
+
+  competence.style.left = `${randomX}px`;
+  competence.style.top = `${randomY}px`;
+  positions.push({ x: randomX, y: randomY });
+});
 
   

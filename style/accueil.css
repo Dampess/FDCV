@@ -88,6 +88,7 @@ header .headerInit {
     opacity: 0; 
     transform: translateX(-20px); 
     transition: opacity 1s ease, transform 1s ease; 
+    color: beige;
 }
 
 #presentation .me img{
@@ -113,6 +114,7 @@ header .headerInit {
     opacity: 0; 
     transform: translateX(-20px); 
     transition: opacity 1s ease, transform 1s ease; 
+    color: beige;
 }
 
 #presentation .entreprise img{
@@ -188,31 +190,91 @@ header .headerInit {
 
 #competences{
     position: relative;
-    background-color: black;
-    color: beige;
+    color: rgb(0, 0, 0);
     margin: 0;
     min-height: 100dvh;
+    
 }
+
 #competences .h2competences{
     margin: 0;
     text-align: center;
     font-family: robot-title;
     font-size: 35px;
 }
+
 .compet {
+    background-color: black;
     position: absolute;
     font-family: robot-regular;
     font-size: 20px;
-    color: rgb(139, 251, 35); 
+    color: beige; 
     border-radius: 5px; 
     margin: 15px;
     padding: 10px;
-    cursor: pointer;
+    cursor:default;
     transition: transform 0.3s ease;
-    transform-style: preserve-3d; /* Activer la 3D */
+  transform-style: preserve-3d;
   perspective: 1000px;
+  transform: translateZ(0);
   }
   
   .compet:hover {
-    transform: scale(1.1);
+    transform: scale(1.1) rotateX(60deg);
   }
+
+  /* Docs et contacts */
+
+  #docAndContacts{
+    min-height: 100dvh;
+  }
+
+  #docAndContacts .h2DocAndContacts{
+    text-align: center;
+    font-family: robot-title;
+    font-size: 35px;
+    margin: 0;
+  }
+
+  .divdocs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: robot-regular;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 5%;
+   
+  }
+#docAndContacts .divdocs .documents .btn-download{
+    background-color: rgb(253, 253, 253);
+    color:rgb(0, 0, 0) ;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+#docAndContacts .divdocs .documents .btn-download:hover{
+cursor: pointer;
+background-color: black;
+color:rgb(139, 251, 35) ;
+}
+
+#docAndContacts .divdocs .documents{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#docAndContacts .divdocs .documents img{
+    width: 30%;
+    margin-bottom: 2%;
+}
+
+#docAndContacts .contacts ul{
+    list-style: none;
+}
+
+#docAndContacts .contacts ul li{
+    margin-bottom: 5%;
+    text-align: left;
+}
