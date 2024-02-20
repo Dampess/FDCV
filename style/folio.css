@@ -4,7 +4,7 @@
     justify-items: space-between;
     align-content: center;
     font-family: robot-title;
-    background-color: rgb(171, 171, 171);
+    background-color: rgb(244, 239, 239);
 }
 #folio h2{
     font-size: 35px;
@@ -33,12 +33,13 @@
     border: 5px;
     border-style: groove;
     border-color: aliceblue;
-    background-color: rgb(50, 50, 50);
+    background-color: rgb(187, 180, 180);
 }
 
 
 #folio .design{
     margin: auto;
+    margin-bottom: 2%;
     padding: 2%;
     width: 80%;
     display: flex;
@@ -47,7 +48,7 @@
     border: 5px;
     border-style: groove;
     border-color: aliceblue;
-    background-color: rgb(50, 50, 50);
+    background-color: rgb(187, 180, 180);
 }
 
 /* Responsivité */

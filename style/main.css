@@ -79,6 +79,16 @@ footer{
 }
 
 /* Responsivité */
+@media screen and (min-width: 1600px){
+.headerInit{
+    width: 50%;
+}
+body{
+    width: 50%;
+    margin: auto;
+}
+
+}
 
 @media screen and (max-width: 600px) {
   header .headerInit ul>li {
