@@ -1,7 +1,7 @@
 
   // Bloquer le clicl droit sur toute la page 
 
-// document.addEventListener('contextmenu', function (e) {
-//     e.preventDefault();
-//   });
+document.addEventListener('contextmenu', function (e) {
+    e.preventDefault();
+  });
   
