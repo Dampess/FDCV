@@ -22,7 +22,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  height: 20vh; /* Limite la hauteur à 10% de la hauteur de la fenêtre */
+  height: 25vh; /* Limite la hauteur à 20% de la hauteur de la fenêtre */
   z-index: 1000; /* S'assure qu'il est toujours au-dessus */
   display: flex;
   justify-content: space-between;
@@ -33,7 +33,6 @@ header {
 
 /* Limitation de la hauteur et taille des éléments du header */
 header .headerInit {
-  height: 6vh;
   display: flex;
   align-items: center;
   justify-content: left;
@@ -41,7 +40,6 @@ header .headerInit {
 
 header .headerInit .logo {
   max-width: 18vh; /* Ajuste la taille du logo */
-  height: auto;
 }
 
 header nav ul {
@@ -99,7 +97,11 @@ a:hover {
     flex-direction: column;
     align-items: center;
   }
-
+  header nav ul li a {
+    
+    padding: 5px 5px; /* Espace autour des liens */
+    
+  }
   footer {
     flex-direction: column;
     text-align: center;
