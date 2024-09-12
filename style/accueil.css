@@ -171,12 +171,12 @@
     padding: 3rem;
     border-radius: 12px;
     margin-bottom: 3rem;
-    max-width: 900px;
+    max-width: 90vh ;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
 
 #docAndContacts .divdocs .documents img {
-    height: 70vh;
+    height: 90vh;
 }
 
 #docAndContacts .contacts ul {
