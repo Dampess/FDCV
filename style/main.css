@@ -93,7 +93,7 @@ button:hover, a:hover {
 @media screen and (max-width: 600px) {
     header .headerInit {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
     }
 
     footer {
