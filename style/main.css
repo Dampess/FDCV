@@ -41,7 +41,7 @@ header .headerInit {
 }
 
 header .headerInit .logo {
-    max-width: 20vh; /* Ajuste la taille du logo */
+    max-width: 18vh; /* Ajuste la taille du logo */
     height: auto;
 }
 
