@@ -249,6 +249,8 @@
     }
 
     #docAndContacts .divdocs {
+        height: 90vh;
+        max-width: 60vh;
         padding: 2rem;
     }
 }
