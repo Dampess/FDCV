@@ -1,63 +1,96 @@
-#folio{
+/* Style général de la section portfolio */
+#folio {
     display: flex;
     flex-direction: column;
-    justify-items: space-between;
-    align-content: center;
-    font-family: robot-title;
-    background-color: rgb(244, 239, 239);
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    padding: 8rem 2rem;
+    color: #333;
 }
-#folio h2{
-    font-size: 35px;
-    margin-left: 2%;
-}
-#folio h3{
+
+#folio h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #333;
     text-align: center;
-    font-size: 25px;
 }
 
-#folio img{
-    width: 20%;
-    height: auto;
-    border-radius: 15px;
-    margin-bottom: 2%;
-    margin-right: 2%;
+#folio h3 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #007bff;
 }
 
-#folio .web{
-    margin: auto;
-    width: 80%;
-    padding: 2%;
-    display: flex;
-    justify-content: space-between;
-    
-    border: 5px;
-    border-style: groove;
-    border-color: aliceblue;
-    background-color: rgb(187, 180, 180);
-}
-
-
-#folio .design{
-    margin: auto;
-    margin-bottom: 2%;
-    padding: 2%;
+/* Style des articles (Web & Design) */
+#folio article {
     width: 80%;
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
-    border: 5px;
-    border-style: groove;
-    border-color: aliceblue;
-    background-color: rgb(187, 180, 180);
+    justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: 4rem;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
 }
 
-/* Responsivité */
+#folio article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 123, 255, 0.2);
+}
 
-@media screen and (max-width: 600px){
-   #folio h2,#folio h3 {
-        font-size: 15px;
+#folio img {
+    width: 22%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+#folio img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Grille des projets Web */
+#folio .web {
+    background-color: #e9ecef;
+}
+
+#folio .design {
+    background-color: #f1f1f1;
+}
+
+/* Responsivité pour les petits écrans */
+@media screen and (max-width: 900px) {
+    #folio img {
+        width: 45%;
     }
-    #folio {
-        min-height: 100dvh;
+}
+
+@media screen and (max-width: 600px) {
+    #folio h2 {
+        font-size: 1.8rem;
+    }
+
+    #folio h3 {
+        font-size: 1.5rem;
+    }
+
+    #folio img {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    #folio article {
+        flex-direction: column;
+        padding: 1.5rem;
     }
 }

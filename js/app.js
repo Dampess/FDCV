@@ -1,27 +1,4 @@
 
-// Apparition du header au chargement de la page
-
-document.addEventListener("DOMContentLoaded", function () {
-    const headerBig = document.querySelector('.headerBig');
-    headerBig.style.opacity = 1; 
-    headerBig.style.transform = 'scale(1)'; 
-  });
-
-//   Apparation du header initial après le scroll et disparition si l'on remonte
-
-window.addEventListener('scroll', () => {
-    const headerInit = document.querySelector('.headerInit');
-    const scrollValue = window.scrollY;
-    const screenHeight = window.innerHeight;
-  
-    if (scrollValue >= screenHeight) {
-        headerInit.style.opacity = 1;
-      } else if (scrollValue < screenHeight ) {
-        headerInit.style.opacity = 0;
-      }
-      lastScrollPosition = scrollValue;
-  });
-
 // parallaxe Text
 document.addEventListener("DOMContentLoaded", function () {
     var rellax = new Rellax('.parallaxe-texte', {

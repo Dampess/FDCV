@@ -1,369 +1,246 @@
-main {
-  background-color: rgb(244, 239, 239);
-}
-/* Style de l'acceuil + apparition du header au défilement */
-
-header .headerBig {
-  height: 25dvh;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  font-family: robot-title;
-  margin: 0;
-  opacity: 0;
-  transform: scale(0);
-  transition: opacity 1.5s ease, transform 1s ease;
-}
-
-header .headerBig img {
-  max-width: 20%;
-  margin: 0;
-}
-
-header .headerInit {
-  opacity: 0;
-  transition: opacity 0.5s ease;
-  position: fixed;
-  top: 0;
-  background-color: black;
-  z-index: 2;
-}
-
-/* Style partie 1 Bgi et Bienvenue en parallax */
-
+/* Style d'accueil */
 #accueille {
-  margin: 0;
-  min-height: 80dvh;
-  background-color: rgba(0, 0, 0, 0.617);
-  background-image: url(../img/pexels-negative-space-169573.jpg);
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-blend-mode: multiply;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    margin: 0;
+    min-height: 100vh;
+    background: rgba(0, 0, 0, 0.5) url('../img/pexels-negative-space-169573.jpg') no-repeat center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+    position: relative;
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.7); /* Ombre interne pour effet de profondeur */
 }
 
 .parallaxe-texte {
-  font-family: robot-title;
-  font-size: 35px;
-  color: beige;
+    font-size: 3.5vw;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-align: center;
+    line-height: 1.4;
+    animation: fadeIn 2s ease-out;
+    max-width: 800px;
+    backdrop-filter: blur(5px); /* Filtre de flou pour effet de texte flottant */
+    padding: 2rem;
+    border-radius: 8px;
 }
 
-/* Section présentation */
+/* Animation de fondu */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
 
+/* Section Présentation */
 #presentation {
-  min-height: 30dvh;
-  
+    padding: 5rem 2rem;
+    background-color: #fdfdfd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-
-.h2Presentation {
-  text-align: center;
-  font-family: robot-title;
-  font-size: 35px;
-  margin-bottom: 5%;
+#presentation .me, #presentation .entreprise {
+    background-color: #fff;
+    padding: 3rem;
+    margin-bottom: 3rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    max-width: 1200px;
+    transition: all 0.3s ease-in-out;
 }
 
-#presentation .me {
-  width: 50%;
-  margin-left: 10%;
-  padding: 2%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: flex-start;
-  font-family: robot-regular;
-  font-size: 20px;
-  text-align: justify;
-  background-color: rgb(187, 180, 180);
-  /* border: 2px;
-  border-style: dashed;
-  border-color: rgb(18, 18, 18); */
-  opacity: 0;
-  transform: translateX(-20px);
-  transition: opacity 1s ease, transform 1s ease;
-  color: rgb(62, 62, 62);
-  margin-bottom: 2%;
+#presentation .me:hover, #presentation .entreprise:hover {
+    transform: translateY(-10px); /* Ajout d'un effet de levée lors du survol */
 }
 
-#presentation .me img {
-  width: 27%;
-  margin-right: 2%;
+#presentation .me img, #presentation .entreprise img {
+    border-radius: 50%;
+    max-width: 180px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Ombre pour rendre l'image plus professionnelle */
 }
 
-#presentation .entreprise {
-  min-height: 45%;
-  margin-left: 40%;
-  padding: 2%;
-  width: 50%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: flex-start;
-  font-family: robot-regular;
-  font-size: 20px;
-  text-align: justify;
-  background-color: rgb(187, 180, 180);
-  /* border: 2px;
-  border-style: dashed;
-  border-color: rgb(139, 251, 35); */
-  opacity: 0;
-  transform: translateX(-20px);
-  transition: opacity 1s ease, transform 1s ease;
-  color: rgb(62, 62, 62);
-}
-
-#presentation .entreprise img {
-  width: 20%;
-  margin-left: 2%;
-}
-
-/* Section Formation et carriére  */
-
+/* Timeline de la Formation */
 #formationCarreer {
-  min-height: 30dvh;
-  width: 50%;
-}
-
-#formationCarreer .h2formation {
-  text-align: center;
-  font-family: robot-title;
-  font-size: 35px;
+    padding: 4rem 2rem;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #formationCarreer .timeline {
-  display: flex;
-  margin: auto;
-  border: 2.5px;
-  border-style: double;
-  width: 80%;
-  justify-content: space-between;
-  font-family: robot-regular;
-  font-size: 20px;
-  color: rgb(62, 62, 62);
-
-  background-color: rgb(187, 180, 180);
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 #formationCarreer .timeline ul {
-  list-style: none;
-  height: 100%;
+    list-style: none;
+    padding-left: 0;
+    position: relative;
 }
 
-#formationCarreer .formation {
-  border: 0;
-  border-right: 10px;
-  border-style: ridge;
-  border-color: rgb(62, 62, 62);
-  transform: scale(1);
-  transition: transform 1s ease;
-}
-#formationCarreer .carreer {
-  margin-top: 2%;
-  transform: scale(1);
-  transition: transform 1s ease;
-}
-#formationCarreer .formation ul li {
-  margin-bottom: 9%;
-  border: 0;
-  border-top: 5px;
-  border-style: dashed;
+#formationCarreer ul li {
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    color: #333;
 }
 
-#formationCarreer .carreer ul li {
-  margin-bottom: 25%;
-  margin-right: 10%;
-
-  border: 0;
-  border-top: 5px;
-  border-style: dashed;
+#formationCarreer ul li::before {
+    content: '';
+    position: absolute;
+    left: 15px;
+    top: 0;
+    height: 10px;
+    width: 10px;
+    background-color: #1d9bf0;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(29, 155, 240, 0.7); /* Effet lumineux sur les points de la timeline */
 }
 
-.skills{
-  margin-top: 2%;
-  margin-bottom: 2%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: first baseline;
+#formationCarreer ul li::after {
+    content: '';
+    position: absolute;
+    left: 19px;
+    top: 10px;
+    height: 100%;
+    width: 3px;
+    background-color: #1d9bf0;
+    opacity: 0.5; /* Ligne reliant les éléments de la timeline */
 }
-/* Section compétences */
 
+/* Style compétences */
 #competences {
-  position: relative;
-  color: rgb(0, 0, 0);
-  margin: 0;
-  min-height: 30dvh;
-  width: 50%;
+    padding: 4rem 2rem;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-#competences .h2competences {
-  margin: 0;
-  text-align: center;
-  font-family: robot-title;
-  font-size: 35px;
-}
 .divcompet {
-  border: 2.5px;
-  border-style: outset;
-  margin: auto;
-  width: 80%;
-  
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  background-color: rgb(187, 180, 180);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 25px;
+    max-width: 1200px;
 }
+
 .compet {
-  background-color: black;
-  font-family: robot-regular;
-  font-size: 20px;
-  color: beige;
-  border-radius: 5px;
-  margin: 25px;
-  padding: 10px;
-  cursor: default;
-  transition: transform 0.3s ease;
-  transform-style: preserve-3d;
-  perspective: 1000px;
-  transform: translateZ(0);
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    width: calc(33.333% - 20px); /* Pour 3 colonnes */
+    text-align: center;
+    transition: all 0.3s ease;
 }
 
 .compet:hover {
-  transform: scale(1.1) rotateX(75deg);
+    transform: scale(1.05);
+    background-color: #007bff;
+    box-shadow: 0 10px 30px rgba(0, 123, 255, 0.3); /* Ombre plus forte au hover */
 }
 
-/* Docs et contacts */
-
-#docAndContacts .h2DocAndContacts {
-  text-align: center;
-  font-family: robot-title;
-  font-size: 35px;
-  margin: 0;
+/* Section Documents et Contacts */
+#docAndContacts {
+    padding: 4rem 2rem;
+    background-color: #222;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .divdocs {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  font-family: robot-regular;
-  font-size: 20px;
-  text-align: center;
-
-  border: 2.5px;
-  border-style: inset;
-  
-  width: 80%;
-  margin: auto;
-  margin-bottom: 3%;
-  min-height: 30dvh;
-  align-items: center;
-  background-color: rgb(50, 50, 50);
-}
-#docAndContacts .divdocs .documents .btn-download {
-  background-color: rgb(253, 253, 253);
-  color: rgb(0, 0, 0);
-  padding: 10px;
-  border-radius: 15px;
-  font-size: 15px;
-}
-
-#docAndContacts .divdocs .documents .btn-download:hover {
-  cursor: pointer;
-  background-color: black;
-  color: rgb(139, 251, 35);
-}
-
-#docAndContacts .divdocs .documents {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#docAndContacts .divdocs .documents img {
-  width: 45%;
-  margin-bottom: 2%;
-  border: 2px;
-  border-style: groove;
-  border-color: rgb(251, 251, 251);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 3rem;
+    border-radius: 12px;
+    margin-bottom: 3rem;
+    max-width: 900px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
 
 #docAndContacts .contacts ul {
-  list-style: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 #docAndContacts .contacts ul li {
-  margin-bottom: 5%;
-  text-align: left;
-  color: beige;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    color: #ddd;
+    position: relative;
+    padding-left: 30px;
+}
+
+#docAndContacts .contacts ul li::before {
+    content: '●';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #007bff;
+}
+
+/* Bouton Call to Action */
+.cta-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.cta-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-5px);
 }
 
 /* Responsivité */
-@media screen and (max-width: 1220px){
-.skills{
-  display: block;
+@media screen and (max-width: 900px) {
+    .divcompet {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #presentation .me, #presentation .entreprise {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #formationCarreer .timeline ul li {
+        padding-left: 30px;
+    }
 }
 
-#competences , #formationCarreer{
-  width: 100%;
-  margin: 0;
-}
+@media screen and (max-width: 600px) {
+    .parallaxe-texte {
+        font-size: 5vw;
+        padding: 1.5rem;
+    }
 
-#competences .compet{
-  color: black;
-}
-}
-
-@media screen and (max-width: 480px) {
-  h1,
-  h2,
-  h3 {
-    font-size: 15px;
-  }
-  .parallaxe-texte{
-    font-size: 25px;
-  }
-  #competences .h2competences,
-  #docAndContacts .h2DocAndContacts,
-  #formationCarreer .h2formation,
-  .h2Presentation {
-    font-size: 20px;
-  }
-  p {
-    font-size: 15px;
-  }
-  #presentation,
-  #formationCarreer,
-  #competences, 
-  #docAndContacts .divdocs {
-    min-height: auto;
-  }
-  #presentation .me, #presentation .entreprise{
-    width: 100%;
-    margin-left: 0;
-  }
-  #formationCarreer ul li {
-    font-size: 10px;
-    border: 1.5px;
-  }
-
-  #competences h4 {
-    font-size: 10px;
-    padding: 5px;
-    display: contents;
-  }
-
-  #docAndContacts .divdocs .documents {
-    display: none;
-  }
-
-  #docAndContacts .divdocs .contacts {
-    font-size: 10px;
-  }
-  
+    #docAndContacts .divdocs {
+        padding: 2rem;
+    }
 }
