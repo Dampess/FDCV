@@ -141,7 +141,7 @@
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-    width: calc(33.333% - 20px); /* Pour 3 colonnes */
+    width: calc(20.333% - 40px); /* Pour 3 colonnes */
     text-align: center;
     transition: all 0.3s ease;
 }
@@ -173,6 +173,10 @@
     margin-bottom: 3rem;
     max-width: 900px;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+#docAndContacts .divdocs .documents img {
+    height: 80vh;
 }
 
 #docAndContacts .contacts ul {
@@ -224,6 +228,7 @@
         gap: 20px;
     }
 
+
     #presentation .me, #presentation .entreprise {
         flex-direction: column;
         text-align: center;
@@ -238,6 +243,9 @@
     .parallaxe-texte {
         font-size: 5vw;
         padding: 1.5rem;
+    }
+    .compet{
+        width: 100%;
     }
 
     #docAndContacts .divdocs {
